@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL Factory | Software & Automatización</title>
+  <link rel="icon" type="image/png" href="assets/icons/iconoPL.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/styles.css">
+  
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Meta Tags para SEO -->
+  <meta name="description" content="PL Factory: Desarrollo de software, automatización IA y soluciones digitales para escalar tu negocio. Creamos sitios web modernos, optimizamos SEO y automatizamos procesos empresariales con inteligencia artificial.">
+
+  <meta name="keywords" content="Desarrollo de software, Automatización IA, Sitios web, SEO, Soluciones digitales, Escalar negocios, PL Factory">
+
+  <meta name="author" content="PL Factory">
+
+  <meta property="og:title" content="PL Factory | Desarrollo Web, IA y Automatización">
+
+  <meta property="og:description" content="Creamos sitios web, automatizaciones inteligentes y software para empresas modernas.">
+
+  <meta property="og:url" content="https://plfactory.com.ar">
+
+  <meta property="og:type" content="website">
+
+</head>
+
+<body class="text-gray-900">
+
+  <!-- NAVBAR -->
+   <header class="fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-4">
+
+        <nav class="glass-nav max-w-7xl mx-auto rounded-2xl px-6 py-4 shadow-sm">
+
+            <div class="flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="h-12 flex items-center">
+                <img
+                src="assets/logos/logoPL.png"
+                alt="PL Factory"
+                class="h-full w-auto max-w-[220px] object-contain"
+                />
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center gap-10 font-medium text-sm">
+                <li>
+                <a href="#inicio" class="hover:text-violet-700 transition">
+                    Inicio
+                </a>
+                </li>
+
+                <li>
+                <a href="#nosotros" class="hover:text-violet-700 transition">
+                    Nosotros
+                </a>
+                </li>
+
+                <li>
+                <a href="#servicios" class="hover:text-violet-700 transition">
+                    Servicios
+                </a>
+                </li>
+
+                <li>
+                <a href="#contacto" class="hover:text-violet-700 transition">
+                    Contacto
+                </a>
+                </li>
+            </ul>
+
+            <!-- Desktop CTA -->
+            <a
+                href="#contacto"
+                class="hidden md:flex bg-violet-600 hover:bg-violet-700 transition text-white px-5 py-3 rounded-xl font-medium shadow-lg shadow-violet-200"
+            >
+                Contáctanos
+            </a>
+
+            <!-- Mobile Button -->
+            <button
+                id="menu-btn"
+                class="md:hidden flex flex-col justify-center gap-1.5"
+            >
+                <span class="w-6 h-[2px] bg-gray-900 rounded-full"></span>
+                <span class="w-6 h-[2px] bg-gray-900 rounded-full"></span>
+                <span class="w-6 h-[2px] bg-gray-900 rounded-full"></span>
+            </button>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div
+            id="mobile-menu"
+            class="hidden md:hidden flex-col gap-5 pt-6 pb-2 border-t border-gray-100 mt-6"
+            >
+
+            <a
+                href="#inicio"
+                class="text-gray-700 font-medium hover:text-violet-700 transition"
+            >
+                Inicio
+            </a>
+
+            <a
+                href="#nosotros"
+                class="text-gray-700 font-medium hover:text-violet-700 transition"
+            >
+                Nosotros
+            </a>
+
+            <a
+                href="#servicios"
+                class="text-gray-700 font-medium hover:text-violet-700 transition"
+            >
+                Servicios
+            </a>
+
+            <a
+                href="#contacto"
+                class="text-gray-700 font-medium hover:text-violet-700 transition"
+            >
+                Contacto
+            </a>
+
+            <a
+                href="#contacto"
+                class="bg-violet-600 hover:bg-violet-700 transition text-white text-center py-3 rounded-xl font-medium shadow-lg shadow-violet-200"
+            >
+                Contáctanos
+            </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+  <!-- HERO -->
+  <section
+    id="inicio"
+    class="relative min-h-screen flex items-center justify-center px-6 pt-36 md:pt-24 overflow-hidden"
+  >
+
+    <!-- Background Glow -->
+    <div class="absolute top-32 left-20 w-72 h-72 bg-violet-200 rounded-full blur-3xl opacity-30"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-200 rounded-full blur-3xl opacity-30"></div>
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+
+      <!-- Left -->
+      <div>
+        <span class="bg-violet-100 text-violet-700 px-4 py-2 rounded-full text-sm font-medium">
+          Desarrollo • IA • Automatización
+        </span>
+
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mt-8">
+          
+          Desarrollo Web y Automatización Inteligente 
+
+          <span class="gradient-text">para Empresas</span>
+        </h1>
+
+        <p class="text-gray-600 text-lg mt-8 leading-relaxed max-w-xl">
+          Creamos experiencias digitales modernas, automatizaciones inteligentes
+          y soluciones tecnológicas diseñadas para escalar empresas.
+        </p>
+
+        <div class="flex flex-wrap gap-4 mt-10">
+          <a
+            href="#contacto"
+            class="bg-violet-600 hover:bg-violet-700 text-white px-7 py-4 rounded-2xl font-semibold transition shadow-xl shadow-violet-200"
+          >
+            Solicitar proyecto
+          </a>
+
+          <a
+            href="#servicios"
+            class="border border-gray-300 hover:border-violet-400 px-7 py-4 rounded-2xl font-semibold transition"
+          >
+            Ver servicios
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Floating Cards -->
+      <div class="relative h-auto flex flex-col gap-6 mt-14 lg:mt-0 lg:h-125 lg:block">
+
+        <div class="floating-card relative lg:absolute lg:bottom-0 lg:right-10 bg-white border border-gray-100 shadow-2xl rounded-3xl w-full p-6 sm:w-72 lg:w-64 mx-auto">
+          <div class="w-12 h-12 rounded-xl bg-violet-100 flex items-center justify-center text-2xl">
+            💻
+          </div>
+          <h3 class="font-bold text-xl mt-4">Sitios Web</h3>
+          <p class="text-gray-500 mt-2 text-sm">
+            Sitios web profesionales optimizados para conversión y experiencia de usuario.
+          </p>
+        </div>
+
+        <div class="floating-card relative lg:absolute lg:bottom-16 lg:left-0 bg-white border border-gray-100 shadow-2xl rounded-3xl p-6 w-full sm:w-72 lg:w-64 mx-auto">
+          <div class="w-12 h-12 rounded-xl bg-violet-100 flex items-center justify-center text-2xl">
+            🤖
+          </div>
+          <h3 class="font-bold text-xl mt-4">Automatización con Inteligencia Artificial</h3>
+          <p class="text-gray-500 mt-2 text-sm">
+            Procesos automáticos inteligentes para empresas.
+          </p>
+        </div>
+
+        <div class="floating-card relative lg:absolute lg:top-15 lg:left-10 bg-white border border-gray-100 shadow-2xl rounded-3xl p-6 w-full sm:w-72 lg:w-64 mx-auto">
+          <div class="w-12 h-12 rounded-xl bg-violet-100 flex items-center justify-center text-2xl">
+            📈
+          </div>
+          <h3 class="font-bold text-xl mt-4">SEO Local para Empresas</h3>
+          <p class="text-gray-500 mt-2 text-sm">
+            Posicionamiento para destacar en Google.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="relative overflow-hidden py-28 px-6">
+    <!-- Background Glow -->
+    <div class="absolute top-0 left-0 z-0 w-72 h-72 bg-violet-200 rounded-full blur-3xl opacity-30 "></div>
+    <div class="absolute top-0 left-0 z-0 w-96 h-96 bg-purple-200 rounded-full blur-3xl opacity-30 "></div>
+    <div class="relative max-w-6xl mx-auto text-center z-10">
+
+      <span class="text-violet-700 font-semibold uppercase tracking-widest text-sm">
+        Sobre Nosotros
+      </span>
+
+      <h2 class="text-4xl md:text-6xl font-extrabold mt-6 leading-tight">
+        Nosotros
+        <span class="gradient-text typing" id="typing-text"></span>
+      </h2>
+
+      <p class="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto mt-10">
+        En PL Factory desarrollamos soluciones digitales modernas enfocadas
+        en resultados reales. Combinamos diseño, desarrollo, automatización
+        e inteligencia artificial para ayudar a negocios a crecer y destacar
+        profesionalmente.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-28 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center">
+        <span class="text-violet-700 font-semibold uppercase tracking-widest text-sm">
+          Servicios
+        </span>
+
+        <h2 class="text-4xl md:text-5xl font-extrabold mt-6">
+          Soluciones para empresas modernas
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
+
+        <!-- CARD -->
+        <div class="service-card bg-white rounded-3xl p-6 shadow-lg border border-gray-100">
+          <img
+            src="assets/images/websiteCard.png"
+            class="rounded-2xl h-48 w-full object-cover"
+            alt="Desarrollo web profesional en Córdoba"
+          />
+
+          <h3 class="text-2xl font-bold mt-6">
+            Sitios Web Profesionales
+          </h3>
+
+          <p class="text-gray-600 mt-4 leading-relaxed">
+            Soluciones digitales y plataformas modernas optimizadas para conversión,
+            velocidad y experiencia de usuario.
+          </p>
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card bg-white rounded-3xl p-6 shadow-lg border border-gray-100">
+          <img
+            src="assets/images/SeoCard.png"
+            class="rounded-2xl h-48 w-full object-cover"
+            alt="SEO Local en cordoba para empresas"
+          />
+
+          <h3 class="text-2xl font-bold mt-6">
+            SEO Local para Empresas
+          </h3>
+
+          <p class="text-gray-600 mt-4 leading-relaxed">
+            Mejoramos el posicionamiento de tu empresa en Google para atraer
+            más clientes y aumentar visibilidad.
+          </p>
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card bg-white rounded-3xl p-6 shadow-lg border border-gray-100">
+          <img
+            src="assets/images/AutomatizationCard.png"
+            class="rounded-2xl h-48 w-full object-cover"
+            alt="Automatización con inteligencia artificial para empresas en Córdoba"
+          />
+
+          <h3 class="text-2xl font-bold mt-6">
+            Automatización con Inteligencia Artificial
+          </h3>
+
+          <p class="text-gray-600 mt-4 leading-relaxed">
+            Optimizamos procesos empresariales con automatizaciones inteligentes
+            para ahorrar tiempo y mejorar eficiencia.
+          </p>
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card bg-white rounded-3xl p-6 shadow-lg border border-gray-100">
+          <img
+            src="assets/images/MapsCard.png"
+            class="rounded-2xl h-48 w-full object-cover"
+            alt="Google Maps para empresas en Córdoba"
+          />
+
+          <h3 class="text-2xl font-bold mt-6">
+            Google Maps
+          </h3>
+
+          <p class="text-gray-600 mt-4 leading-relaxed">
+            Creamos y optimizamos perfiles empresariales para mejorar presencia
+            local y generar confianza.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-28 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="gradient-border rounded-[2rem] p-0.5 border-transparent ring-2 ring-violet-500/50">
+        <div class="gradient-border-content rounded-[2rem] bg-white p-6 md:p-10 lg:p-14">
+
+          <div class="grid gap-10 lg:grid-cols-[1.3fr_1fr] items-center">
+
+            <div class="space-y-10">
+              <div class="max-w-2xl">
+                <span class="text-violet-700 font-semibold uppercase tracking-widest text-sm">
+                  Contacto
+                </span>
+
+                <h2 class="text-5xl md:text-6xl font-extrabold mt-6 leading-tight text-slate-950">
+                  ¿Tenés una idea, un proceso para optimizar o un producto para escalar?
+                </h2>
+
+                <p class="text-gray-600 mt-6 text-lg leading-relaxed">
+                  Hablemos y armemos una solución digital que combine negocio,
+                  tecnología y ejecución real.
+                </p>
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="floating-card rounded-[2rem] bg-gray-100 border border-white/10 p-8 shadow-lg md:shadow-2xl shadow-slate-900/20 backdrop-blur-xl">
+                  <p class="text-xs uppercase tracking-[0.28em] text-gray-500 mb-3">Email</p>
+                  <p class="font-semibold text-slate-950">PLfactory@gmail.com</p>
+                </div>
+                <div class="floating-card rounded-[2rem] bg-gray-100 border border-white/10 p-8 shadow-lg md:shadow-2xl shadow-slate-900/20 backdrop-blur-xl">
+                  <p class="text-xs uppercase tracking-[0.28em] text-gray-500 mb-3">Teléfono</p>
+                  <p class="font-semibold text-slate-950">+54 351 8787048</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-card rounded-[2rem] bg-gray-100 border border-white/10 p-8 shadow-lg md:shadow-2xl shadow-slate-900/20 backdrop-blur-xl">
+              <div class="mb-8 text-black">
+                <p class="text-xl font-semibold">Dejanos tus datos</p>
+              </div>
+
+              <form class="space-y-5">
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  class="w-full rounded-3xl border border-violet-500 ring-2 ring-violet-500/20 bg-gray-100 px-5 py-4 text-black placeholder:text-slate-500 outline-none "
+                />
+
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="w-full rounded-3xl border border-violet-500 ring-2 ring-violet-500/20 bg-gray-100 px-5 py-4 text-black placeholder:text-slate-500 outline-none "
+                />
+
+                <input
+                  type="text"
+                  placeholder="Empresa"
+                  class="w-full rounded-3xl border border-violet-500 ring-2 ring-violet-500/20 bg-gray-100 px-5 py-4 text-black placeholder:text-slate-500 outline-none "
+                />
+
+                <textarea
+                  rows="5"
+                  placeholder="Contanos brevemente qué necesitás"
+                  class="w-full rounded-3xl border border-violet-500 ring-2 ring-violet-500/20 bg-gray-100 px-5 py-4 text-black placeholder:text-slate-500 outline-none "
+                ></textarea>
+
+                <button
+                  type="submit"
+                  class="w-full rounded-3xl bg-violet-600 px-6 py-4 text-white font-semibold hover:bg-violet-700 transition"
+                >
+                  Solicitar propuesta
+                </button>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-100 border-t border-gray-100 py-8 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+
+      <!-- Logo -->
+      <div class="h-12 flex items-center">
+        <img src="assets/logos/logoPL.png" alt="PL Factory" class="h-full w-auto max-w-[220px] object-contain" />
+      </div>
+
+      <p class="text-gray-500 text-sm">
+        © 2026 PL Factory. Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating -->
+  <a
+    href="https://wa.me/3518787048"
+    target="_blank"
+    class="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-violet-500 hover:scale-110 transition-all duration-300 shadow-[0_10px_30px_rgba(124,58,237,0.4)] flex items-center justify-center"
+  >
+    <i class="fa-brands fa-whatsapp text-white text-4xl"></i>
+  </a>
+
+  <script src="src/main.js"></script>
+ 
+</body>
+</html>
